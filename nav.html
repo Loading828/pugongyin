@@ -1,0 +1,287 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+<div class="nav-close"><i class="fa fa-times-circle"></i>
+</div>
+<div class="sidebar-collapse">
+<ul class="nav" id="side-menu">
+<li class="nav-header">
+    <div class="dropdown profile-element">
+        <span><img alt="image" class="img-circle" src="__ADMIN__/img/profile_small.jpg" /></span>
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                </span>
+        </a>
+        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+            <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
+            </li>
+            <li><a class="J_menuItem" href="profile.html">个人资料</a>
+            </li>
+            <li><a class="J_menuItem" href="contacts.html">联系我们</a>
+            </li>
+            <li><a class="J_menuItem" href="mailbox.html">信箱</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="{:url('brand/Login/logout')}">安全退出</a>
+            </li>
+        </ul>
+    </div>
+    <div class="logo-element">
+    </div>
+</li>
+
+
+<li>
+    <a href="#">
+        <i class="fa fa-user-plus"></i>
+        <span class="nav-label">账号管理</span>
+        <span class="fa arrow"></span>
+    </a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a class="J_menuItem" href="{:url('brand/users/index')}" data-index="0">管理员列表</a>
+        </li>
+        <li>
+            <a class="J_menuItem" href="{:url('brand/users/role')}">角色列表</a>
+        </li>
+        <li>
+            <a class="J_menuItem" href="{:url('brand/users/rule')}">权限列表</a>
+        </li>
+    </ul>
+
+</li>
+
+<li>
+    <a href="#"><i class="fa fa-random"></i> <span class="nav-label"><span style="color: #ff0000">未做</span>  审核管理</span><span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a  class="J_menuItem" href="{:url('brand/Message/message_list')}" title="待审核提现"><i class="fa fa-random"></i>待审核提现</a>
+        </li>
+
+    </ul>
+</li>
+<li>
+    <a href="#"><i class="fa fa-random"></i> <span class="nav-label"><span style="color: #ff0000">未做</span> 统计管理</span><span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a  class="J_menuItem" href="{:url('brand/Sales/sales_list')}" title="销售统计"><i class="fa fa-random"></i>销售统计</a>
+        </li>
+
+    </ul>
+</li>
+
+
+    <li>
+        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">商品管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+        	
+        	<!-- <li>
+                <a  class="J_menuItem" href="{:url('brand/Goods/goods_add')}" title="新增商品"><i class="fa fa-plus-square"></i>新增商品</a>
+              
+            </li>
+        	-->
+            <li>
+            <a href="#"><i class="fa fa-sticky-note-o"></i>商品列表管理<span class="fa arrow"></span></a>
+            <ul class="nav nav-third-level">
+                <li>
+                    <a  class="J_menuItem" href="{:url('brand/Goods/goods_list')}" title="商品列表"><i class="fa fa-sticky-note-o"></i>商品列表</a>
+
+                </li>
+
+                <li>
+                    <a  class="J_menuItem" href="{:url('brand/Goods/goodsPre_list')}" title="预售商品列表"><i class="fa fa-sticky-note-o"></i>预售商品列表</a>
+
+                </li>
+            </ul>
+
+        	</li>
+
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Goods/supply_list')}" title="商品列表"><i class="fa fa-sticky-note-o"></i>供应商品列表</a>
+
+            </li>
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Goods/supplied_list')}" title="商品列表"><i class="fa fa-sticky-note-o"></i>被供应商品列表</a>
+
+            </li>
+
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Goods/firstCategory_list')}" title="商品分类"><i class="fa fa-envelope-square"></i>商品分类</a>
+
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-envelope-square"></i>商品属性<span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li>
+                        <a class="J_menuItem" href="{:url('brand/Goods/color_list')}">颜色</a>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="{:url('brand/Goods/material_list')}">材质</a>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="{:url('brand/Goods/pattern_list')}">花型</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="{:url('brand/Goods/size_list')}" class="J_menuItem"><i class="fa fa-retweet"></i>商品尺码 </a>
+            </li>
+        </ul>
+    </li>
+
+<li>
+    <a class="J_menuItem" href="{:url('brand/Orders/orders_list')}" title="订单列表"><i class="fa fa-desktop"></i> <span class="nav-label">订单管理</span></a>
+
+</li>
+<li>
+    <a href="#"><i class="fa fa-support"></i> <span class="nav-label">营销管理</span><span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a  class="J_menuItem" href="{:url('brand/Marketing/sell_list')}" title="促销活动列表"><i class="fa fa-support"></i>促销活动列表</a>
+        </li>
+        
+    </ul>
+</li>
+
+    <li>
+        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">商城管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Shopping/evaluate_list')}" title="评价列表"><i class="fa fa-envelope-square"></i>评价列表</a>
+
+            </li>
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Shopping/adPosition_list')}" title="广告位管理"><i class="fa fa-image"></i>广告位管理</a>
+
+            </li>
+
+
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Shopping/banner_list')}" title="广告图管理"><i class="fa fa-image"></i>广告图管理</a>
+
+            </li>
+
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Shopping/search_list')}" title="搜索管理"><i class="fa fa-search"></i>搜索管理</a>
+
+            </li>
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Shopping/style_list')}" title="风格管理"><i class="fa fa-dashboard"></i>风格管理</a>
+            </li>
+
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Volume/volume_page')}" title="人体输入项管理"><i class="fa fa-tag"></i>人体输入项管理</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-support"></i> <span class="nav-label">营销管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Marketing/sell_list')}" title="促销活动列表"><i class="fa fa-support"></i>促销活动列表</a>
+            </li>
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Marketing/hot_list')}" title="热销商品列表"><i class="fa fa-support"></i>热销商品列表</a>
+            </li>
+        </ul>
+    </li>
+
+<!--    <li>
+        <a href="#"><i class="fa fa-tag"></i> <span class="nav-label">量体页面管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Volume/volume_page')}" title="录入数据页面管理"><i class="fa fa-tag"></i>录入数据页面管理</a>
+            </li>
+
+        </ul>
+    </li>-->
+
+   
+    <li>
+        <a class="J_menuItem" href="{:url('brand/Customer/customer_list')}"><i class="fa fa-female"></i> <span class="nav-label">客户管理</span></a>
+    </li>
+
+
+
+<li>
+    <a href="#"><i class="fa fa-female"></i> <span class="nav-label"><span style="color: #ff0000">未做</span> 分销管理</span><span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+        <li>
+            <a  class="J_menuItem" href="{:url('brand/Customer/customer_list')}" title="分销列表"><i class="fa fa-female"></i>分销列表</a>
+        </li>
+        <li>
+            <a  class="J_menuItem" href="{:url('brand/Customer/customer_list')}" title="佣金详情"><i class="fa fa-female"></i>佣金详情</a>
+        </li>
+    </ul>
+</li>
+
+    <li>
+        <a href="#"><i class="fa fa-connectdevelop"></i> <span class="nav-label">试衣间管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Fitting/firstMenu_list')}" title="一级菜单管理"><i class="fa fa-connectdevelop"></i>一级菜单管理</a>
+                <a  class="J_menuItem" href="{:url('brand/Fitting/secondMenu_list')}" title="二级菜单管理"><i class="fa fa-connectdevelop"></i>二级菜单管理</a>
+                <a  class="J_menuItem" href="{:url('brand/Fitting/recommendedImg_list')}" title="推荐商品小图管理"><i class="fa fa-connectdevelop"></i>推荐商品小图管理</a>
+                <a  class="J_menuItem" href="{:url('brand/Fitting/recommendedBg_list')}" title="试衣间背景图片管理"><i class="fa fa-connectdevelop"></i>试衣间背景图管理</a>
+            <li>
+                <a href="#"><i class="fa fa-connectdevelop"></i>娱乐管理 <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li>
+                        <a class="J_menuItem" href="{:url('brand/Fitting/disport_list')}">娱乐主题列表</a>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="{:url('brand/Fitting/disports_list')}">娱乐元素列表</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-bell"></i> <span class="nav-label">消息管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Message/message_list')}" title="消息列表"><i class="fa fa-bell"></i>消息列表</a>
+<!--
+                <a  class="J_menuItem" href="{:url('brand/Message/message_add')}" title="新增消息"><i class="fa fa-bell"></i>新增消息</a>
+-->
+            </li>
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="#"><i class="fa fa-keyboard-o"></i> <span class="nav-label"><span style="color: #ff0000">未做</span> 结算管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Message/message_list')}" title="商家结算"><i class="fa fa-keyboard-o"></i>商家结算</a>
+                <a  class="J_menuItem" href="{:url('brand/Message/message_add')}" title="供应商结算"><i class="fa fa-keyboard-o"></i>供应商结算</a>
+            </li>
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="#"><i class="fa fa-random"></i> <span class="nav-label"><span style="color: #ff0000">未做</span> 交叉推荐管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Message/message_list')}" title="商家结算"><i class="fa fa-random"></i>交叉推荐商品</a>
+                <a  class="J_menuItem" href="{:url('brand/Message/message_add')}" title="供应商结算"><i class="fa fa-random"></i>交叉推荐订单</a>
+            </li>
+
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-wrench"></i> <span class="nav-label">设置管理</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level">
+            <li>
+                <a  class="J_menuItem" href="{:url('brand/Contact/contact_list')}" title="售后管理"><i class="fa fa-wrench"></i>售后管理</a>
+                <a  class="J_menuItem" href="{:url('brand/Contact/contactCode_list')}" title="二维码管理"><i class="fa fa-wrench"></i>二维码管理</a>
+            </li>
+
+        </ul>
+    </li>
+</ul>
+</div>
+</nav>
+
